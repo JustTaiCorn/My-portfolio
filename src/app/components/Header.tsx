@@ -27,7 +27,7 @@ export default function Header() {
         </div>
       </div>
       <h3 className="text-xl md:text-2xl mb-2 font-semibold mt-5">
-        Hi! I'm Tai Corn
+        Hi! I&apos;m Tai Corn
       </h3>
       <div className=" ">
         <div className="flex text-wrap justify-center items-center gap-3 md:gap-5 ">
