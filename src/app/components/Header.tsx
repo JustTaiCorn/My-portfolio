@@ -14,13 +14,13 @@ export default function Header() {
     <div className="  max-w-4xl text-center mx-auto flex flex-col   items-center justify-center min-h-screen gap-4">
       <div className="relative">
         <Image
-          src={assets.profile_img}
+          src={assets.MyAvatar}
           alt="Logo"
-          className="w-32 h-32 rounded-2xl"
+          className="w-32 h-32 rounded-full"
         />
         <div className="absolute top-[-27%] right-[-29%]">
           <CircularText
-            text="REACT*BITS*COMPONENTS*"
+            text="REACHING*TO*THE*SKY*"
             onHover="speedUp"
             spinDuration={20}
           />
@@ -35,9 +35,13 @@ export default function Header() {
             <motion.p
               key={index}
               className="text-2xl font-bold uppercase md:text-5xl lg:text-6xl inline-block"
-              initial={{ opacity: 0, filter: "blur(15px)", x: 20 }}
+              initial={{ opacity: 0, filter: "blur(15px)", x: "50%" }}
               animate={{ opacity: 1, filter: "blur(0px)", x: 0 }}
-              transition={{ delay: index * 0.2, duration: 0.75 }}
+              transition={{
+                delay: index * 0.2,
+                duration: 0.75,
+                ease: [0.18, 0.89, 0.82, 1.04],
+              }}
             >
               {word === " " ? "\u00A0" : word}
             </motion.p>
@@ -49,9 +53,13 @@ export default function Header() {
           <motion.p
             key={index}
             className="text-xl md:text-2xl text-gray-700  inline-block"
-            initial={{ opacity: 0, filter: "blur(15px)", y: 20 }}
+            initial={{ opacity: 0, filter: "blur(10px)", y: "50%" }}
             animate={{ opacity: 1, filter: "blur(0px)", y: 0 }}
-            transition={{ delay: index * 0.2 + 0.5, duration: 0.25 }}
+            transition={{
+              delay: index * 0.2 + 0.5,
+              duration: 0.25,
+              ease: [0.18, 0.89, 0.82, 1.04],
+            }}
           >
             {word === " " ? "\u00A0" : word}
           </motion.p>

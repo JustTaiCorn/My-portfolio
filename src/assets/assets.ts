@@ -15,7 +15,6 @@ import logo from "./logo.png";
 import logo_dark from "./logo_dark.png";
 import mail_icon from "./mail_icon.png";
 import mail_icon_dark from "./mail_icon_dark.png";
-import profile_img from "./profile-img.png";
 import download_icon from "./download-icon.png";
 import hand_icon from "./hand-icon.png";
 import header_bg_color from "./header-bg-color.png";
@@ -38,112 +37,133 @@ import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
 import Min1 from "./Min1.jpg";
 import Min3 from "./Min3.jpg";
 import Min2 from "./Min2.jpg";
-import { caption } from "motion/react-client";
+import MyAvatar from"./MyAvatar.jpg";
 export const assets = {
-    user_image,
-    code_icon,
-    code_icon_dark,
-    edu_icon,
-    edu_icon_dark,
-    project_icon,
-    project_icon_dark,
-    vscode,
-    firebase,
-    figma,
-    git,
-    mongodb,
-    right_arrow_white,
-    logo,
-    logo_dark,
-    mail_icon,
-    mail_icon_dark,
-    profile_img,
-    download_icon,
-    hand_icon,
-    header_bg_color,
-    moon_icon,
-    sun_icon,
-    arrow_icon,
-    arrow_icon_dark,
-    menu_black,
-    menu_white,
-    close_black,
-    close_white,
-    web_icon,
-    mobile_icon,
-    ui_icon,
-    graphics_icon,
-    right_arrow,
-    send_icon,
-    right_arrow_bold,
-    right_arrow_bold_dark,
+  MyAvatar,
+  user_image,
+  code_icon,
+  code_icon_dark,
+  edu_icon,
+  edu_icon_dark,
+  project_icon,
+  project_icon_dark,
+  vscode,
+  firebase,
+  figma,
+  git,
+  mongodb,
+  right_arrow_white,
+  logo,
+  logo_dark,
+  mail_icon,
+  mail_icon_dark,
+
+  download_icon,
+  hand_icon,
+  header_bg_color,
+  moon_icon,
+  sun_icon,
+  arrow_icon,
+  arrow_icon_dark,
+  menu_black,
+  menu_white,
+  close_black,
+  close_white,
+  web_icon,
+  mobile_icon,
+  ui_icon,
+  graphics_icon,
+  right_arrow,
+  send_icon,
+  right_arrow_bold,
+  right_arrow_bold_dark,
 };
 
 export const workData = [
-    {
-        title: "Frontend project",
-        description: "Web Design",
-        bgImage: "/work-1.png",
-    },
-    {
-        title: "Geo based app",
-        description: "Mobile App",
-        bgImage: "/work-2.png",
-    },
-    {
-        title: "Photography site",
-        description: "Web Design",
-        bgImage: "/work-3.png",
-    },
-    {
-        title: "UI/UX designing",
-        description: "UI/UX Design",
-        bgImage: "/work-4.png",
-    },
+  {
+    title: "Frontend project",
+    description: "Web Design",
+    bgImage: "/work-1.png",
+  },
+  {
+    title: "Geo based app",
+    description: "Mobile App",
+    bgImage: "/work-2.png",
+  },
+  {
+    title: "Photography site",
+    description: "Web Design",
+    bgImage: "/work-3.png",
+  },
+  {
+    title: "UI/UX designing",
+    description: "UI/UX Design",
+    bgImage: "/work-4.png",
+  },
 ];
 export const Image = [
-    {
-        src: Min1,
-        alt: "Minimalist design 1",
-        caption: "My Love",
-    },
-    {
-        src: Min2,
-        alt: "Minimalist design 2",
-        caption: "My Life",
-    },
-    {
-        src: Min3,
-        alt: "Minimalist design 3",
-        caption: "My Journey",
-    },
+  {
+    src: Min1,
+    alt: "Minimalist design 1",
+    caption: "My Love",
+  },
+  {
+    src: Min2,
+    alt: "Minimalist design 2",
+    caption: "My Life",
+  },
+  {
+    src: Min3,
+    alt: "Minimalist design 3",
+    caption: "My Journey",
+  },
 ];
 
 export const infoList = [
-    {
-        icon: assets.code_icon,
-        iconDark: assets.code_icon_dark,
-        title: "Languages",
-        description: "HTML, CSS, JavaScript React Js, Next Js",
-    },
-    {
-        icon: assets.edu_icon,
-        iconDark: assets.edu_icon_dark,
-        title: "Education",
-        description: "B.Tech in Computer Science",
-    },
-    {
-        icon: assets.project_icon,
-        iconDark: assets.project_icon_dark,
-        title: "Projects",
-        description: "Built more than 5 projects",
-    },
+  {
+    icon: assets.code_icon,
+    iconDark: assets.code_icon_dark,
+    title: "Address",
+    description: "Ha Noi - Viet Nam",
+  },
+  {
+    icon: assets.edu_icon,
+    iconDark: assets.edu_icon_dark,
+    title: "Education",
+    description: "Hanoi National University of Education",
+  },
+  {
+    icon: assets.project_icon,
+    iconDark: assets.project_icon_dark,
+    title: "Certification",
+    description: "TOEIC 835/990 , VSTEP B2",
+  },
+];
+ export const projects = [
+  {
+    title: "Pop-corn Film",
+    description: "An online movie website allowing users to browse and watch films easily, with responsive design for all devices.",
+
+    tech: ["External API" ,"React", "Javascript", "Material UI", "mongoDB", "Express"],
+    image: "https://i.ibb.co/JwFFhchX/H-nh-nh-PNG.png",
+    github: "https://github.com/ontopcommunity/vuestic-admin",
+    live: "https://vuestic-admin-one.vercel.app"
+  },
+  {
+    title: "Portfolio",
+    description: "A responsive portfolio website showcasing modern web development techniques and beautiful animations.",
+    tech: ["React", "Framer Motion", "Tailwind CSS", "Vite"],
+    image: "https://i.ibb.co/3yB0TVDP/IMG-8810.png",
+    github: "https://github.com/ontopcommunity/visage-vue-forge",
+    live: "https://visage-vue-forge.vercel.app"
+  }
+];
+export const toolsData = [
+  assets.vscode,
+  assets.firebase,
+  assets.mongodb,
+  assets.figma,
+  assets.git,
 ];
 
-export const toolsData = [
-    assets.vscode,
-    assets.firebase,
-    assets.mongodb,
-    assets.figma,
-    assets.git,
-];
+

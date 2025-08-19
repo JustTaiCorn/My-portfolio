@@ -33,13 +33,13 @@ export default function NavBar() {
     return (
         <>
             <nav
-                className={`w-full flex justify-between items-center top-0 left-0 right-0 px-5 lg:px-8 xl:px-[8%]  fix py-5 z-99 ${
+                className={`w-full flex justify-between items-center top-0 left-0 right-0 px-5 lg:px-8 xl:px-[8%]  fixed py-5 z-99 ${
                     isScrolled
                         ? "backdrop-blur-md border-b border-amber-50"
                         : "bg-transparent"
                 }`}
             >
-                <a href="#top" className="flex">
+                <a  className="flex" >
                     <Image
                         src={assets.logo}
                         alt="Logo"
