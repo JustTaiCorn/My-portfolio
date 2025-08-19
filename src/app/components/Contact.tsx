@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import { socialLinks } from "@/assets/assets";
 import {motion} from "framer-motion";
 
 function Contact() {
