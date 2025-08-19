@@ -4,7 +4,6 @@ import Header from "@/app/components/Header";
 import { About } from "@/app/components/About";
 import Projects from "@/app/components/Projects";
 import Contact from "@/app/components/Contact";
-import {SmoothCursor} from "@/components/ui/smooth-cursor";
 export default function Home() {
   return (
     <>
@@ -17,7 +16,7 @@ export default function Home() {
           color={[0.1, 0.1, 0.1]}
         />
       </div>
-        {/*<SmoothCursor/>*/}
+      
       {/* Main content */}
       <div className="relative min-h-screen">
         <NavBar />
