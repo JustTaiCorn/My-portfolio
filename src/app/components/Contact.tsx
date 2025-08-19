@@ -1,5 +1,7 @@
+"use client";
 import React from "react";
 import { socialLinks } from "@/assets/assets";
+import {motion} from "framer-motion";
 
 function Contact() {
   const socialLinks = [
@@ -70,7 +72,10 @@ function Contact() {
       className="py-12 px-6 w-full mx-auto border-t border-glass-border bg-white/10 backdrop-blur-md"
     >
       <footer className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+        <motion.div  initial={{ opacity: 0, y: 20 }}
+                     whileInView={{ opacity: 1, y: 0 }}
+                     transition={{duration:0.5, ease: "easeInOut"}} viewport={{once:true}}
+                     className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
           <div className="flex flex-col gap-2">
             <h3>
               <span className="text-xl font-bold text-gray-800">
@@ -130,13 +135,16 @@ function Contact() {
               </span>
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="mt-8 pt-8 border-t border-glass text-center">
+        <motion.div  initial={{ opacity: 0, y: 20 }}
+                     whileInView={{ opacity: 1, y: 0 }}
+                     transition={{duration:0.5, delay:0.2}} viewport={{once:true}}
+                     className="mt-8 pt-8 border-t border-glass text-center">
           <p className="text-gray-500 text-lg">
             © 2025 TaiCorn. All rights reserved.
           </p>
-        </div>
+        </motion.div>
       </footer>
     </section>
   );

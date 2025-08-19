@@ -39,11 +39,12 @@ export default function NavBar() {
                         : "bg-transparent"
                 }`}
             >
-                <a  className="flex" >
+                <a  className="flex items-center justify-center gap-2" >
+                    <h2 className="text-gray-800 font-bold sm:text-4xl text-2xl uppercase ">Corn</h2>
                     <Image
-                        src={assets.logo}
+                        src={assets.corn}
                         alt="Logo"
-                        className="w-28 cursor-pointer mr-14"
+                        className="w-10 cursor-pointer mr-14"
                         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                     />
                 </a>

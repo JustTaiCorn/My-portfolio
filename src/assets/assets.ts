@@ -37,7 +37,8 @@ import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
 import Min1 from "./Min1.jpg";
 import Min3 from "./Min3.jpg";
 import Min2 from "./Min2.jpg";
-import MyAvatar from"./MyAvatar.jpg";
+import MyAvatar from "./MyAvatar.jpg";
+import corn from "./corn.png";
 export const assets = {
   MyAvatar,
   user_image,
@@ -57,7 +58,7 @@ export const assets = {
   logo_dark,
   mail_icon,
   mail_icon_dark,
-
+  corn,
   download_icon,
   hand_icon,
   header_bg_color,
@@ -139,24 +140,40 @@ export const infoList = [
     description: "TOEIC 835/990 , VSTEP B2",
   },
 ];
- export const projects = [
+export const projects = [
   {
     title: "Pop-corn Film",
-    description: "An online movie website allowing users to browse and watch films easily, with responsive design for all devices.",
-
-    tech: ["External API" ,"React", "Javascript", "Material UI", "mongoDB", "Express"],
-    image: "https://i.ibb.co/JwFFhchX/H-nh-nh-PNG.png",
-    github: "https://github.com/ontopcommunity/vuestic-admin",
-    live: "https://vuestic-admin-one.vercel.app"
+    description:
+      "An online movie website allowing users to browse and watch films easily, with responsive design for all devices.",
+    tech: [
+      "External API",
+      "React",
+      "Javascript",
+      "Material UI",
+      "mongoDB",
+      "Express",
+    ],
+    image:
+      "https://i.pinimg.com/736x/9b/e1/8b/9be18bd15b94590e42f763e90b210ce6.jpg",
+    github: "https://github.com/JustTaiCorn/Corn.films",
+    live: "https://popcornflims.netlify.app/",
   },
   {
     title: "Portfolio",
-    description: "A responsive portfolio website showcasing modern web development techniques and beautiful animations.",
-    tech: ["React", "Framer Motion", "Tailwind CSS", "Vite"],
-    image: "https://i.ibb.co/3yB0TVDP/IMG-8810.png",
+    description:
+      "A responsive portfolio website showcasing modern web development techniques and beautiful animations.",
+    tech: [
+      "Nextjs",
+      "Framer Motion",
+      "Tailwind CSS",
+      "Shadcn UI",
+      "TypeScript",
+    ],
+    image:
+      "https://i.pinimg.com/736x/46/66/fe/4666fe7ddd96b5aac222fc6ea5697ca6.jpg",
     github: "https://github.com/ontopcommunity/visage-vue-forge",
-    live: "https://visage-vue-forge.vercel.app"
-  }
+    live: "https://visage-vue-forge.vercel.app",
+  },
 ];
 export const toolsData = [
   assets.vscode,
@@ -165,5 +182,3 @@ export const toolsData = [
   assets.figma,
   assets.git,
 ];
-
-

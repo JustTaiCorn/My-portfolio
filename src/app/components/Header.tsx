@@ -11,7 +11,7 @@ export default function Header() {
   const description =
     "I am passionate about crafting modern, responsive, and user-friendly web interfaces. With a growing foundation in React, Tailwind CSS, and modern JavaScript, I am eager to become a professional frontend developer.";
   return (
-    <div className="  max-w-4xl text-center mx-auto flex flex-col   items-center justify-center min-h-screen gap-4">
+    <div className=" relative max-w-4xl text-center mx-auto flex flex-col   items-center justify-center min-h-screen gap-4">
       <div className="relative">
         <Image
           src={assets.MyAvatar}
@@ -96,6 +96,16 @@ export default function Header() {
           </a>
         </motion.div>
       </div>
+        <button onClick={()=> window.scrollTo({top:0, behavior:"smooth"})}
+            className=" bottom-4 fixed right-4 sm:right-5 z-99 bg-black text-white rounded-full p-3 sm:p-4 cursor-pointer shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                 className="lucide lucide-arrow-big-up-dash-icon lucide-arrow-big-up-dash">
+                <path
+                    d="M9 13a1 1 0 0 0-1-1H5.061a1 1 0 0 1-.75-1.811l6.836-6.835a1.207 1.207 0 0 1 1.707 0l6.835 6.835a1 1 0 0 1-.75 1.811H16a1 1 0 0 0-1 1v2a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1z"/>
+                <path d="M9 20h6"/>
+            </svg>
+        </button>
     </div>
   );
 }
